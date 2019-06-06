@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title></title>
+  </head>
+  <body>
+    <div class="container mt-5 first">
+      <div>
+        <h1>Какого героя Звездных войн "озвучивали" сразу четверо: белый медведь, морж, барсук и верблюд?</h1>
+      </div>
+      <div class="border py-2 otvet1_1">
+        <p class="ml-3 pt-1">R2-D2</p>
+      </div>
+      <div class="border-right border-left py-2 otvet1_2">
+        <p class="ml-3 pt-1">Джаббу Хата</p>
+      </div>
+      <div class="border py-2 otvet1_3">
+        <p class="ml-3 pt-1">Чубакку</p>
+      </div>
+    </div>
+
+    <div class="container mt-5 second" style="display: none;">
+      <div>
+        <h1>Какая компьютерная игра, согласно книге рекордов Гиннеса, является самой популярной в мире?</h1>
+      </div>
+      <div class="border py-2 otvet2_1">
+        <p class="ml-3 pt-1">Pac-Man</p>
+      </div>
+      <div class="border-right border-left py-2 otvet2_2">
+        <p class="ml-3 pt-1">Tetris</p>
+      </div>
+      <div class="border py-2 otvet2_3">
+        <p class="ml-3 pt-1">Minesweeper</p>
+      </div>
+      <div class="border py-2 otvet2_4">
+        <p class="ml-3 pt-1">Sonic</p>
+      </div>
+    </div>
+
+    <div class="container mt-5 third" style="display: none;">
+      <div class="container">
+        <h1 class="text-center">Как зовут этого персонажа?</h1>
+        <img src="1.jpg" class="w-25">
+      </div>
+      <div class="border py-2 otvet3_1">
+        <p class="ml-3 pt-1">Larry</p>
+      </div>
+      <div class="border-right border-left py-2 otvet3_2">
+        <p class="ml-3 pt-1">Todd</p>
+      </div>
+      <div class="border py-2 otvet3_3">
+        <p class="ml-3 pt-1">Sally</p>
+      </div>
+      <div class="border py-2 otvet3_4">
+        <p class="ml-3 pt-1">Travis</p>
+      </div>
+      <div class="border py-2 otvet3_5">
+        <p class="ml-3 pt-1">Bob</p>
+      </div>
+    </div>
+
+    <div class="container mt-5 fourth" style="display: none;">
+      <div>
+        <h1>Какая это песня?</h1>
+        <audio controls>
+          <source src="song.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+      <div class="border py-2 otvet4_1">
+        <p class="ml-3 pt-1">Coldplay: Scientist</p>
+      </div>
+      <div class="border-right border-left py-2 otvet4_2">
+        <p class="ml-3 pt-1">The Chainsmokers: Young</p>
+      </div>
+      <div class="border py-2 otvet4_3">
+        <p class="ml-3 pt-1">Twenty One Pilots: House of Gold</p>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      document.querySelector(".otvet1_1").onclick = function(){
+        alert("-")
+     }
+      document.querySelector(".otvet1_2").onclick = function(){
+        alert("-")
+     }
+      document.querySelector(".otvet1_3").onclick = function(){
+        alert("+")
+        document.querySelector(".first").style.display = "none";
+        document.querySelector(".second").style.display = "";
+     }
+
+
+      document.querySelector(".otvet2_1").onclick = function(){
+        alert("+")
+        document.querySelector(".second").style.display = "none";
+        document.querySelector(".third").style.display = "";
+     }
+      document.querySelector(".otvet2_2").onclick = function(){
+        alert("-")
+     }
+      document.querySelector(".otvet2_3").onclick = function(){
+        alert("-")
+     }
+      document.querySelector(".otvet2_4").onclick = function(){
+        alert("-")
+     }
+
+
+     document.querySelector(".otvet3_1").onclick = function(){
+        alert("-")
+     }
+      document.querySelector(".otvet3_2").onclick = function(){
+        alert("-")
+     }
+      document.querySelector(".otvet3_3").onclick = function(){
+        alert("+")
+        document.querySelector(".third").style.display = "none";
+        document.querySelector(".fourth").style.display = "";
+     }
+      document.querySelector(".otvet3_4").onclick = function(){
+        alert("-")
+     }
+      document.querySelector(".otvet3_5").onclick = function(){
+        alert("-")
+     }
+
+
+      document.querySelector(".otvet4_1").onclick = function(){
+        alert("-")
+      }
+      document.querySelector(".otvet4_2").onclick = function(){
+        alert("-")
+      }
+      document.querySelector(".otvet4_3").onclick = function(){
+        alert("+")
+      }
+    </script>
+
+  </body>
+</html>
